@@ -1,3 +1,5 @@
+<?php require_once 'functions.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +11,14 @@
 </head>
 <body>
   <header>
-
+    <?php include 'nav.php'; ?>
   </header>
   <main>
-    <h1>Welcome, Friend</h1>
-    
+    <h1><?php echo greeting(); ?></h1>
+    <?php include 'form.html'; ?>
   </main>
   <footer>
- 
+  <?php include 'nav.php'; ?>
   </footer>
 </body>
 </html>
